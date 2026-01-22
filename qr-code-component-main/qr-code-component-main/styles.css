@@ -1,0 +1,75 @@
+:root {
+    /* colors */
+  --White: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+  /*font*/
+  --Outfit: "Outfit", system-ui;
+}
+
+/* CSS reset */
+*,
+*::before, 
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 288px;
+    border-radius: 10px;
+    
+}
+
+body {
+    background-color: var(--Slate-300);
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.qr-container {
+    background-color: white;
+    border-radius: 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+    box-shadow: 0px 10px 20px hsl(218, 44%, 22%, 0.2);
+}
+
+.qr-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-text-content > h1, 
+.qr-text-content > p {
+    font-family: var(--Outfit);
+}
+
+.qr-text-content > h1 {
+    font-size: 1.375rem;
+    color: var(--Slate-900);
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    width: 288px;
+}
+
+.qr-text-content > p {
+    display: flex;
+    justify-self: center;
+    color: var(--slate-500);
+    font-size: 0.938rem;
+    padding-bottom: 2.5rem;
+    width: 256px;
+}
